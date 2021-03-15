@@ -1,5 +1,22 @@
 # homeassistant-snoo
 
+## Overview
+Stolen from https://bitbucket.org/pjhardy/homeassistant-snoo for easier installation via HACS.
+
+## Project Details
+https://community.home-assistant.io/t/snoo-smart-sleeper-custom-component/171941/7
+
+## HACS installation instructions
+1. From the HACS screen in Home Assistant, click three dots in upper right-hand side
+2. `Custom Repository`
+3. In `Add custom repository URL`, type `https://github.com/Meandmybadself/homeassistant-snoo/`
+4. Under `Category`, type `Integration`
+5. Click `Add`.
+6. Restart server
+7. `Configuration` > `Integrations` > `Add Integration` > `Happiest Baby Snoo Smart Bassinet`
+8. Provide your Snoo credentials.
+9. Under `Developer Tools` > `States`, you should now see `sensor.snoo_state`.
+
 This is a [Home Assistant][1] custom component to retreive the status of
 a [SNOO Smart Bassinet][2]. It creates a sensor showing the current
 session status (awake, asleep or soothing), as well as the current soothe
