@@ -38,7 +38,7 @@ class SnooStateSensor(Entity):
         return self._state.value
 
     @property
-    def device_state_attributes(self):
+    def extra_state_attributes(self):
         """Return device specific state attributes."""
         return self._attributes
 
